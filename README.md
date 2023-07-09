@@ -1,0 +1,2 @@
+# Teachable-Machine-SMIT
+Hey.
