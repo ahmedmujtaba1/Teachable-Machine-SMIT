@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="templatemo" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Image Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-snapx-photography.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+  </head>
+
+<style>
+    
+
+</style>
+
+
+  <body class="bg-gray-500">
+
+
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Ahmed Mujtaba" />
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="has-sub">
+                  <a href="javascript:void(0)">Projects</a>
+                  <ul class="sub-menu">
+                    <li><a href="image_project.html">Image Project</a></li>
+                    <li><a href="audio_project.html">Audio Project</a></li>
+                    <li><a href="pose_project.html">Pose Project</a></li>
+                  </ul>
+                </li>
+                <li><a href="categories.html">Blogs</a></li>
+                <li><a href="users.html">Contact US</a></li>
+              </ul>
+              <div class="border-button">
+                <a id="modal_trigger" href="#modal" class="sign-in-up"
+                  ><i class="fa fa-user"></i> Sign In/Up</a
+                >
+              </div>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div id="modal" class="popupContainer" style="display: none">
+      <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+      </div>
+
+      <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+          <div class="">
+            <a href="#" class="social_box fb">
+              <span class="icon"><i class="fab fa-facebook"></i></span>
+              <span class="icon_title">Connect with Facebook</span>
+            </a>
+
+            <a href="#" class="social_box google">
+              <span class="icon"><i class="fab fa-google-plus"></i></span>
+              <span class="icon_title">Connect with Google</span>
+            </a>
+          </div>
+
+          <div class="centeredText">
+            <span>Or use your Email address</span>
+          </div>
+
+          <div class="action_btns">
+            <div class="one_half">
+              <a href="#" id="login_form" class="btn">Login</a>
+            </div>
+            <div class="one_half last">
+              <a href="#" id="register_form" class="btn">Sign up</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+          <form action="" method="post">
+            <label>Email / Username</label>
+            <input name="username" type="text" id="username" />
+            <br />
+
+            <label>Password</label>
+            <input name="password" type="password" id="password" />
+            <br />
+
+            <div class="checkbox">
+              <input id="remember" type="checkbox" />
+              <label for="remember">Remember me on this computer</label>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="btn back_btn"
+                  ><i class="fa fa-angle-double-left"></i> Back</a
+                >
+              </div>
+              <div class="one_half last">
+                <button type="submit" class="btn btn_red">Login</button>
+              </div>
+            </div>
+          </form>
+
+          <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+          <form action="" method="post">
+            <label>Username</label>
+            <input name="username" type="text" id="username" />
+            <br />
+
+            <label>Email Address</label>
+            <input name="email" type="email" id="email" />
+            <br />
+
+            <label>Password</label>
+            <input name="password" type="password" id="password" />
+            <br />
+
+            <div class="checkbox">
+              <input id="send_updates" type="checkbox" />
+              <label for="send_updates">Send me occasional email updates</label>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="btn back_btn"
+                  ><i class="fa fa-angle-double-left"></i> Back</a
+                >
+              </div>
+              <div class="one_half last">
+                <button type="submit" class="btn btn_red">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <center>
+      <div class="container mx-auto p-6">
+        <div class="mt-48"></div>
+        
+        <button
+          type="button"
+          onclick="init()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Start
+        
+        </button>
+        <a href="https://teachablemachine.withgoogle.com/models/FvmyhCAQb/" target="_blank">
+            <button
+            type="button"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+            See My Project On Teachable Machine        
+            </button>
+        </a>
+        <div id="webcam-container" class="mt-6 relative w-720 h-480 border-5 border-red-600 rounded-lg shadow-lg">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-3/4 h-3/4 bg-gray-300 rounded-lg shadow-md">
+                <div class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white font-bold px-4 py-2 rounded-full">
+                  Recording
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+          <div id="label-container" class="mt-16"></div>
+          
+      </div>
+    </center>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              Copyright © 2048
+              <a href="https://github.com/ahmedmujtaba1">Ahmed Mujtaba</a> Full
+              Stack Developer., Ltd. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript">
+    // More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+    // the link to your model provided by Teachable Machine export panel
+    const URL = "https://teachablemachine.withgoogle.com/models/FvmyhCAQb/";
+
+    let model, webcam, labelContainer, maxPredictions;
+
+    // Load the image model and setup the webcam
+    async function init() {
+        const modelURL = URL + "model.json";
+        const metadataURL = URL + "metadata.json";
+
+        // load the model and metadata
+        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+        // or files from your local hard drive
+        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
+
+        // Convenience function to setup a webcam
+        const flip = true; // whether to flip the webcam
+        webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+        await webcam.setup(); // request access to the webcam
+        await webcam.play();
+        window.requestAnimationFrame(loop);
+
+        // append elements to the DOM
+        document.getElementById("webcam-container").appendChild(webcam.canvas);
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) { // and class labels
+            labelContainer.appendChild(document.createElement("div"));
+        }
+    }
+
+    async function loop() {
+        webcam.update(); // update the webcam frame
+        await predict();
+        window.requestAnimationFrame(loop);
+    }
+
+    // run the webcam image through the image model
+    async function predict() {
+        // predict can take in an image, video or canvas html element
+        const prediction = await model.predict(webcam.canvas);
+        for (let i = 0; i < maxPredictions; i++) {
+            const classPrediction =
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+        }
+    }
+</script>
+
+  </body>
+</html>

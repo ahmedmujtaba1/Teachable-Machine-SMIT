@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Teachable Machine</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-snapx-photography.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="Ahmed Mujtaba">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li class="has-sub">
+                            <a href="javascript:void(0)">Projects</a>
+                            <ul class="sub-menu">
+                                <li><a href="image_project.html">Image Project</a></li>
+                                <li><a href="audio_project.html">Audio Project</a></li>
+                                <li><a href="pose_project.html">Pose Project</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="categories.html">Blogs</a></li>
+                        <li><a href="users.html">Contact US</a></li>
+                    </ul>   
+                    <div class="border-button">
+                      <a id="modal_trigger" href="#modal" class="sign-in-up"><i class="fa fa-user"></i> Sign In/Up</a>
+                    </div>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
+
+                </a>
+
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
+            </div>
+
+            <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form action="" method="post">
+                <label>Email / Username</label>
+                <input name="username" type="text" id="username" />
+              <br />
+
+                <label>Password</label>
+                <input name="password" type="password" id="password" />
+              <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><button type="submit" class="btn btn_red">Login</button></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form action="" method="post">
+                <label>Username</label>
+                <input name="username" type="text" id="username" />
+                <br />
+
+                <label>Email Address</label>
+                <input name="email" type="email" id="email" />
+                <br />
+
+                <label>Password</label>
+                <input name="password" type="password" id="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><button type="submit" class="btn btn_red">Register</button></div>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+  </div>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="header-text">
+            <h2>Enter a world of <em>Ai</em> &amp; Teachable <em>Machine</em></h2>
+            <p>A fast, easy way to create machine learning models for your sites, apps, and more – no expertise or coding required.</p>
+            <div class="buttons">
+              <div class="big-border-button">
+                <a href="https://teachablemachine.withgoogle.com/">Explore Teachable Machine </a>
+              </div>
+              <div class="icon-button">
+                <a href="https://teachablemachine.withgoogle.com/" target="_blank"><i class="fa fa-play"></i> Watch Our Site Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="data:image/jpeg;base64,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" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Image Project</h1>
+              <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+              <div class="flex items-center flex-wrap ">
+                <a href="./image_project.html"  class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>6
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://teachablemachine.withgoogle.com/assets/img/project-samples/sound/sample2.jpg" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Audio Project</h1>
+              <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+              <div class="flex items-center flex-wrap">
+                <a href="audio_project.html" class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>6
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://teachablemachine.withgoogle.com/assets/img/project-samples/pose/sample2.jpg" alt="blog">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Pose Project</h1>
+              <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+              <div class="flex items-center flex-wrap ">
+                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>6
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2048 <a href="https://github.com/ahmedmujtaba1">Ahmed Mujtaba</a> Full Stack Developer., Ltd. All rights reserved. 
+            
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
